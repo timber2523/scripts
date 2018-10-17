@@ -1,4 +1,21 @@
-# README
+# Utils
 
-- ssr.sh：一个 ssr 客户端
-- unzip.py：支持在 Linux 下解压字符编码方式为 GBK 或 UTF-8 的 ZIP 压缩文件
+A collection of various workflow, usability and ricing scripts that I frequently uses in my work environment.
+
+## Files
+
+- huami.py
+  - Statement: A password generator written in Python 3
+  - Author: [ninehills](https://github.com/ninehills)
+- huami-mod.py
+  - Statement: A password generator written in Python 3
+  - Author: [timber3252](https://github.com/timber3252) (refer to ninehills's script)
+- keygen.py
+  - Statement: A password generator written in Python 3
+  - Author: [timber3252](https://github.com/timber3252)
+- unzip.py
+  - Statement: A simple unzip script written in Python 3 in order to solve cross-platform encoding problem (<u>**mainly for Chinese users**</u>, not a universal solution)
+  - Author: [timber3252](https://github.com/timber3252)
+- ssr.sh
+  - Statement: A shadowsocksr python client tool based on shadowsocksr-python
+  - Author: ??? (idk)
