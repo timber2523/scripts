@@ -1,6 +1,4 @@
 #!/usr/bin/python
-# File: keygen.py
-# Author: Richard Acosta (timber3252)
 
 import sys
 import hmac

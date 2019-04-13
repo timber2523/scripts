@@ -1,6 +1,4 @@
 #!/usr/bin/python
-# File: flower_mod.py
-# Author: Richard Acosta (timber3252)
 
 import sys
 import hmac
