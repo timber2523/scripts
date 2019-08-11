@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 if [ -z $EDITOR ];then
-    EDITOR=nvim
+    EDITOR=kak
 fi
 
 help() {
