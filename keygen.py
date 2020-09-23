@@ -17,7 +17,7 @@ def getPass(para):
   return getpass.getpass(para)
 
 def keyGen(key, password):
-  md5one = hmac.new(toBytes(key), toBytes(password)).hexdigest()
+  md5one = hmac.new(toBytes(key), toBytes(password), hashlib.md5).hexdigest()
   base64one = base64.b64encode(toBytes(md5one))
   sha384one = hmac.new(base64one, toBytes(str1), hashlib.sha384).hexdigest()
   sha256one = hmac.new(base64one, toBytes(str2), hashlib.sha256).hexdigest()

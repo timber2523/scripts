@@ -5,6 +5,7 @@
 # Usage: huami.py KEY
 import sys
 import hmac
+import hashlib
 
 STR1 = "snow"
 STR2 = "kise"
@@ -16,9 +17,9 @@ def toBytes(s):
 def huami(password, key):
     # md5one, md5two, md5three
     # hmac.new(key, msg)
-    md5one = hmac.new(toBytes(key), toBytes(password)).hexdigest()
-    md5two = hmac.new(toBytes(STR1), toBytes(md5one)).hexdigest()
-    md5three = hmac.new(toBytes(STR2), toBytes(md5one)).hexdigest()
+    md5one = hmac.new(toBytes(key), toBytes(password), hashlib.md5).hexdigest()
+    md5two = hmac.new(toBytes(STR1), toBytes(md5one), hashlib.md5).hexdigest()
+    md5three = hmac.new(toBytes(STR2), toBytes(md5one), hashlib.md5).hexdigest()
     rule = list(md5three)
     source = list(md5two)
     for i in range(0, 32):
